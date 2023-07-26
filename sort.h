@@ -17,6 +17,11 @@ typedef struct listint_s
 	struct listint_s *next;
 } listint_t;
 
+int _strcmp(const char *s1, const char *s2);
+char get_value(deck_node_t *card);
+void insertion_sort_deck_kind(deck_node_t **deck);
+void insertion_sort_deck_value(deck_node_t **deck);
+void sort_deck(deck_node_t **deck);
 void print_array(const int *array, size_t size);
 void print_list(const listint_t *list);
 void bubble_sort(int *array, size_t size);
